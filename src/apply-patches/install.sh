@@ -3,6 +3,8 @@
 set -e
 
 echo "email: ${GITEMAIL}"
+echo "path: ${_CONTAINER_USER_HOME}/sdk_patches"
+ls ${_CONTAINER_USER_HOME}
 EMAIL="${GITEMAIL:-user@example.com}"
 NAME="${GITNAME:-anon user}"
 PATCHES_DIR="${PATCHESDIRECTORY:-/workspaces/*/sdk_patches}"
