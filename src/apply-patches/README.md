@@ -1,0 +1,25 @@
+
+# Apply Patches to Simplelink SDK (apply-patches)
+
+Applies patches to the SDK in the devcontainer
+
+## Example Usage
+
+```json
+"features": {
+    "ghcr.io/tl-sl/dev-features/apply-patches:0": {}
+}
+```
+
+## Options
+
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| patchesDirectory | The directory where the patches are located | string | /workspaces/sdk_patches |
+| sdkDirectory | The directory where the SDK is located | string | /opt/ti/ot-ti |
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/tl-sl/dev-features/blob/main/src/apply-patches/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
