@@ -1,6 +1,6 @@
 {
     "id": "apply-patches",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "name": "Apply Patches to Simplelink SDK",
     "description": "Applies patches to the SDK in the devcontainer",
     "options": {
@@ -14,13 +14,18 @@
         },
         "patchesDirectory": {
             "type": "string",
-            "default": "/workspaces/sdk_patches",
+            "default": "/opt/sdk_patches",
             "description": "The directory where the patches are located"
         },
         "sdkDirectory": {
             "type": "string",
             "default": "/opt/ti/ot-ti",
             "description": "The directory where the SDK is located"
+        },
+        "xoscTuning": {
+            "type": "string",
+            "default": "0xC1",
+            "description": "Set Xosc Tuning cap array"
         }
     },
     "installsAfter": ["ghcr.io/devcontainers/features/common-utils:2"]
