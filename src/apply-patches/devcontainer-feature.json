@@ -4,6 +4,14 @@
     "name": "Apply Patches to Simplelink SDK",
     "description": "Applies patches to the SDK in the devcontainer",
     "options": {
+        "gitEmail": {
+            "type": "string",
+            "default": "user@example.com"
+        },
+        "gitName": {
+            "type": "string",
+            "default": "Anon User"
+        },
         "patchesDirectory": {
             "type": "string",
             "default": "/workspaces/sdk_patches",
