@@ -3,9 +3,10 @@
 set -e
 
 echo "email: ${GITEMAIL}"
+
 EMAIL="${GITEMAIL:-user@example.com}"
 NAME="${GITNAME:-anon user}"
-PATCHES_DIR="${PATCHESDIRECTORY:-/workspaces/*/sdk_patches}"
+PATCHES_DIR="${PATCHESDIRECTORY:-/opt/sdk_patches}"
 SDK_DIR="${SDKDIRECTORY:-/opt/ti/ot-ti}"
 
 git config --global user.email \"${EMAIL}\"
