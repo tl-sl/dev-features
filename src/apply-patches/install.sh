@@ -10,8 +10,8 @@ PATCHES_DIR="${PATCHESDIRECTORY:-/opt/sdk_patches}"
 SDK_DIR="${SDKDIRECTORY:-/opt/ti/ot-ti}"
 XOSC="${XOSCTUNING:-0xC1}"
 
-git config --global user.email \"${EMAIL}\"
-git config --global user.name \"${NAME}\"
+git config --global user.email "${EMAIL}"
+git config --global user.name "${NAME}"
 
 echo "Applying patches from ${PATCHES_DIR}"
 cd ${SDK_DIR}
