@@ -22,11 +22,6 @@
             "default": "/opt/ti/ot-ti",
             "description": "The directory where the SDK is located"
         },
-        "xoscTuning": {
-            "type": "string",
-            "default": "0xC1",
-            "description": "Set Xosc Tuning cap array"
-        }
-    },
+    ,
     "installsAfter": ["ghcr.io/devcontainers/features/common-utils:2"]
 }
