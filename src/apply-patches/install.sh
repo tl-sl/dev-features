@@ -17,7 +17,5 @@ echo "Applying patches from ${PATCHES_DIR}"
 cd ${SDK_DIR}
 git am --ignore-whitespace ${PATCHES_DIR}/*.patch
 
-echo "Setting Xosc Tuning to ${Xosc}"
-sed -Ei "s/xoscCapArrayDelta\s*=.*;/xoscCapArrayDelta = ${XOSC};/" src/openthread.syscfg
 
 echo "Patches applied successfully!"
