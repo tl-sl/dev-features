@@ -19,7 +19,6 @@ Applies patches to the SDK in the devcontainer
 | gitName | - | string | Anon User |
 | patchesDirectory | The directory where the patches are located | string | /opt/sdk_patches |
 | sdkDirectory | The directory where the SDK is located | string | /opt/ti/ot-ti |
-| xoscTuning | Set Xosc Tuning cap array | string | 0xC1 |
 
 
 
