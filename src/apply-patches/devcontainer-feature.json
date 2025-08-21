@@ -1,6 +1,6 @@
 {
     "id": "apply-patches",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "name": "Apply Patches to Simplelink SDK",
     "description": "Applies patches to the SDK in the devcontainer",
     "options": {
