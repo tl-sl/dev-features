@@ -13,7 +13,7 @@ XOSC="${XOSCTUNING:-0xC1}"
 git config --global user.email "${EMAIL}"
 git config --global user.name "${NAME}"
 
-echo "Applying patches from ${PATCHES_DIR}"
+
 cd ${SDK_DIR}
 if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
     echo "Initializing git repository in ${SDK_DIR}..."
@@ -22,6 +22,7 @@ if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
     git commit -m "Initial commit"
 fi
 
+echo "Applying patches from ${PATCHES_DIR}"
 git am --ignore-whitespace ${PATCHES_DIR}/*.patch
 make
 
