@@ -15,7 +15,15 @@ git config --global user.name "${NAME}"
 
 echo "Applying patches from ${PATCHES_DIR}"
 cd ${SDK_DIR}
+if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    echo "Initializing git repository in ${SDK_DIR}..."
+    git init
+    git add .
+    git commit -m "Initial commit"
+fi
+
 git am --ignore-whitespace ${PATCHES_DIR}/*.patch
+make
 
 
 echo "Patches applied successfully!"
