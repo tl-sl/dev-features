@@ -24,7 +24,7 @@ fi
 
 echo "Applying patches from ${PATCHES_DIR}"
 git am --ignore-whitespace ${PATCHES_DIR}/*.patch
-make
+# make
 
 
 echo "Patches applied successfully!"
